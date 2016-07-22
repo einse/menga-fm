@@ -1,0 +1,133 @@
+@import url(font-arimo/font-arimo.css);
+@import url(boilerplate.css);
+@import url(skeleton.css);
+
+body {
+  font-family: Arimo, sans-serif;
+  font-size: 10pt;
+  cursor: default;
+  -webkit-user-select: none;
+}
+
+#bookmarks {
+  width: 20%;
+  background-color: lightgray;
+  height: 95vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#sides {
+  width: 80%;
+}
+
+.side {
+  width: 50%;
+}
+
+.fileitem, .button, .bookmarkitem {
+  cursor: pointer;
+}
+
+.fileitem, .bookmarkitem {
+  padding: 0.1em 0.1em;
+  border: 0.01cm solid white;
+  border-radius: 0.2em;
+  white-space: nowrap;
+  word-wrap: break-word;
+  overflow: hidden;
+  position: relative;
+}
+
+.fileitem::after, .bookmarkitem::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0.6em;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(255,255,255, 0.2), #fff 100%);
+}
+
+.fileitem.selected, .bookmarkitem.selected {
+  background-color: lightsteelblue;
+  border: 0.01cm solid navy;
+}
+
+.fileitem[data-type=directory], .bookmarkitem[data-type=directory] {
+  background-color: wheat;
+  border: 0.01cm solid white;
+}
+
+.fileitem[data-type=directory].selected {
+  background-color: sandybrown;
+  border: 0.01cm solid saddlebrown;
+}
+
+input {
+  width: 80%;
+}
+
+#sides {
+  height: 100vh;
+  max-height: 100vh;
+  position: relative;
+}
+
+.side {
+  max-height: inherit;
+  position: absolute;
+}
+
+#sideleft {
+  bottom: 10px;
+  top: 0;
+}
+
+#sideright {
+  left: 50%;
+  bottom: 10px;
+  top: 0;
+}
+
+.folderview {
+  border: 0.01cm solid white;
+  border-radius: 0.2em;
+  height: 90vh;
+  /*max-height: 90vh;*/
+  overflow-y: auto;
+}
+
+.folderview.active {
+  border: 0.01cm solid saddlebrown;
+}
+
+#bookmarks > div {
+  padding: 0.2em;
+}
+
+#statusbar {
+  position: fixed;
+  bottom:0;
+  left:0;
+  white-space: nowrap;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+
+.box {
+  position: fixed;
+  background-color: lightgray;
+  width: 1.4em;
+  height: 1.4em;
+  border: 0.01cm solid #333;
+  border-radius: 0.2em;
+  bottom: 1.6em;
+  left: 0.8em;
+  -webkit-filter: opacity(0.8);
+  text-align: center;
+}
+
+#many {
+  bottom: 4em;
+}

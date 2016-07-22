@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta charset="utf-8">
+  <title></title>
+  <link href="style/style.css" rel="stylesheet">
+</head>
+<body>
+  <section id="middle" class="container clearfix">
+    <h1 class="hidden">Отображение файлов и каталогов</h1>
+    <nav id="bookmarks" class="col"></nav>
+    <div id="sides" class="col clearfix">
+      <div id="sideleft" class="col side">
+        <div id="addressbarleft" class="addressbar">
+          <span id="backbuttonleft" class="button">
+            <img src="icons/backbutton-64x64.png" width="14" height="14">
+          </span>
+          <span id="upbuttonleft" class="button">
+            <img src="icons/upbutton-64x64.png" width="14" height="14">
+          </span>
+          <input id="pathfieldleft" class="pathfield" type="text" value="Адрес">
+        </div>
+        <ul id="folderviewleft" class="folderview"></ul>
+      </div>
+      <div id="sideright" class="col side">
+        <div id="addressbarright" class="addressbar">
+          <span id="backbuttonright" class="button">
+            <img src="icons/backbutton-64x64.png" width="14" height="14">
+          </span>
+          <span id="upbuttonright" class="button">
+            <img src="icons/upbutton-64x64.png" width="14" height="14">
+          </span>
+          <input id="pathfieldright" class="pathfield" type="text" value="Адрес">
+        </div>
+        <ul id="folderviewright" class="folderview"></ul>
+      </div>
+    </div>
+  </section>
+  <div id="statusbar">Статусная строка</div>
+</body>
+</html>
+<script src="js/jquery-2.2.4.js"></script>
+<script src="js/requirements.js"></script>
+<script src="js/os-settings.js"></script>
+<script src="js/path-functions.js"></script>
+<script src="js/json.js"></script>
+<script src="js/core.js"></script>
+<script src="js/bookmarks.js"></script>
+<script src="js/sides.js"></script>
+<script src="js/addressbars.js"></script>
+<script src="js/menu.js"></script>
+<script src="js/menubar.js"></script>
+<script src="js/context-menu.js"></script>
+<script src="js/hotkeys.js"></script>
+<script src="js/render.js"></script>

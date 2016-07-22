@@ -1,0 +1,7 @@
+* { margin:0; padding:0; }
+nav ul, section ul { list-style-type:none; }
+nav li { display:inline-block; }
+.hidden { display:none; visibility:hidden; }
+.clearfix:before, .clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+.clearfix { zoom:1; }

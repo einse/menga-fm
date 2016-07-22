@@ -1,0 +1,8 @@
+{
+  "name": "Menga File Manager",
+  "main": "index.html",
+  "window": {
+    "min_width": 400,
+    "min_height": 350
+  }
+}
